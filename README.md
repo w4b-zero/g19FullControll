@@ -1,3 +1,5 @@
+Testfiles - Not Stable! use original Repository from https://github.com/markes12344/g19FullControll !!
+
 # G19FullControl for Linux 🐧⌨️
 
 **G19FullControl** is a complete, open-source Linux replacement for the legacy Logitech Gaming Software. Built from the ground up in Python, it breathes new life into the iconic Logitech G19 keyboard on modern Linux distributions (X11 & Wayland).
