@@ -1,0 +1,3404 @@
+{
+    "hardware": {
+        "vendor_id": "0x046d",
+        "product_id": "0xc229"
+    },
+    "profiles": [
+        {
+            "name": "Profile 1",
+            "description": "Default",
+            "m_led_mask": 128,
+            "backlight_color": [
+                0,
+                0,
+                0
+            ],
+            "backlight_brightness": 100,
+            "g_key_map": {
+                "58": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.92,15 192.168.188.153,18 192.168.188.170,3",
+                    "note": "Rainbow Backlight"
+                },
+                "59": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.92,14 192.168.188.153,2 192.168.188.170,1",
+                    "note": "Matrix Backlight"
+                },
+                "60": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,3 192.168.188.92,16",
+                    "note": "Metaballs Backlight"
+                },
+                "61": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,4 192.168.188.92,21",
+                    "note": "Ripple Rainbow Backlight"
+                },
+                "62": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.92,5 192.168.188.153,5",
+                    "note": "Sindots Backlight"
+                },
+                "63": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.92,6 192.168.188.153,6",
+                    "note": "Swirl Backlight"
+                },
+                "64": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,7 192.168.188.92,22",
+                    "note": "Twinklecat Backlight"
+                },
+                "65": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,8 192.168.188.92,17",
+                    "note": "Red Backlight"
+                },
+                "66": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,9 192.168.188.92,18",
+                    "note": "Green Backlight"
+                },
+                "67": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,10 192.168.188.92,19",
+                    "note": "Blue Backlight"
+                },
+                "68": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,11 192.168.188.92,20",
+                    "note": "White Backlight"
+                },
+                "69": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,0 192.168.188.92,0",
+                    "note": "Backlight Off"
+                }
+            }
+        },
+        {
+            "name": "Profile 2",
+            "description": "",
+            "m_led_mask": 64,
+            "backlight_color": [
+                0,
+                0,
+                0
+            ],
+            "backlight_brightness": 100,
+            "g_key_map": {
+                "58": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.92,15,50 192.168.188.153,18,50 192.168.188.170,3,50",
+                    "note": "Rainbow Backlight"
+                },
+                "59": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.92,14,50 192.168.188.153,2,50 192.168.188.170,1,50",
+                    "note": "Matrix Backlight"
+                },
+                "60": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,3,50 192.168.188.92,16,50",
+                    "note": "Metaballs Backlight"
+                },
+                "61": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,4,50 192.168.188.92,21,50",
+                    "note": "Ripple Rainbow Backlight"
+                },
+                "62": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.92,5,50 192.168.188.153,5,50",
+                    "note": "Sindots Backlight"
+                },
+                "63": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.92,6,50 192.168.188.153,6,50",
+                    "note": "Swirl Backlight"
+                },
+                "64": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,7,50 192.168.188.92,22,50",
+                    "note": "Twinklecat Backlight"
+                },
+                "65": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,8,50 192.168.188.92,17,50",
+                    "note": "Red Backlight"
+                },
+                "66": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,9,50 192.168.188.92,18,50",
+                    "note": "Green Backlight"
+                },
+                "67": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,10,50 192.168.188.92,19,50",
+                    "note": "Blue Backlight"
+                },
+                "68": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,11,50 192.168.188.92,20,50",
+                    "note": "White Backlight"
+                },
+                "69": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,0,0 192.168.188.92,0,0",
+                    "note": "Backlight Off"
+                }
+            }
+        },
+        {
+            "name": "Profile 3",
+            "description": "",
+            "m_led_mask": 32,
+            "backlight_color": [
+                255,
+                255,
+                255
+            ],
+            "backlight_brightness": 100,
+            "g_key_map": {
+                "58": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.92,15,10 192.168.188.153,18,10 192.168.188.170,3,10",
+                    "note": "Rainbow Backlight"
+                },
+                "59": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.92,14,10 192.168.188.153,2,10 192.168.188.170,1,10",
+                    "note": "Matrix Backlight"
+                },
+                "60": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,3,10 192.168.188.92,16,10",
+                    "note": "Metaballs Backlight"
+                },
+                "61": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,4,10 192.168.188.92,21,10",
+                    "note": "Ripple Rainbow Backlight"
+                },
+                "62": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.92,5,10 192.168.188.153,5,10",
+                    "note": "Sindots Backlight"
+                },
+                "63": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.92,6,10 192.168.188.153,6,10",
+                    "note": "Swirl Backlight"
+                },
+                "64": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,7,10 192.168.188.92,22,10",
+                    "note": "Twinklecat Backlight"
+                },
+                "65": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,8,10 192.168.188.92,17,10",
+                    "note": "Red Backlight"
+                },
+                "66": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,9,10 192.168.188.92,18,10",
+                    "note": "Green Backlight"
+                },
+                "67": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,10,10 192.168.188.92,19,10",
+                    "note": "Blue Backlight"
+                },
+                "68": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,11,10 192.168.188.92,20,10",
+                    "note": "White Backlight"
+                },
+                "69": {
+                    "action": "/home/zero/.local/bin/mwledc.sh 192.168.188.153,0,0 192.168.188.92,0,0",
+                    "note": "Backlight Off"
+                }
+            }
+        }
+    ],
+    "screens": {
+        "hw_monitor": {
+            "show_title_bar": false,
+            "title_text": "",
+            "sensor_list": [
+                {
+                    "hw_id": "CPU Load",
+                    "enabled": true,
+                    "custom_name": "",
+                    "name_colour": [
+                        108,
+                        108,
+                        108
+                    ],
+                    "name_size": 16,
+                    "name_x": 20,
+                    "name_y": 29,
+                    "display_type": "Bar Gauge",
+                    "disp_colour": [
+                        0,
+                        255,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 65.0,
+                    "disp_w": 33,
+                    "disp_h": 6,
+                    "disp_x": 9,
+                    "disp_y": 34,
+                    "show_val": true,
+                    "val_colour": [
+                        0,
+                        255,
+                        0
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 14,
+                    "val_x": 19,
+                    "val_y": 59,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 57
+                },
+                {
+                    "hw_id": "CPU Freq",
+                    "enabled": true,
+                    "custom_name": "CPU",
+                    "name_colour": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "name_size": 16,
+                    "name_x": 26,
+                    "name_y": 83,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        255,
+                        255,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 3401.0,
+                    "high_thresh": 3250.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 200,
+                    "disp_y": 32,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        0
+                    ],
+                    "data_format": "GHz",
+                    "math_mult": 1.0,
+                    "val_size": 14,
+                    "val_x": 88,
+                    "val_y": 43,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        255,
+                        255,
+                        0
+                    ],
+                    "max_size": 10,
+                    "max_x": 163,
+                    "max_y": 61
+                },
+                {
+                    "hw_id": "RAM Load",
+                    "enabled": true,
+                    "custom_name": "RAM",
+                    "name_colour": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "name_size": 16,
+                    "name_x": 182,
+                    "name_y": 83,
+                    "display_type": "Bar Gauge",
+                    "disp_colour": [
+                        0,
+                        255,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 101.0,
+                    "high_thresh": 75.0,
+                    "disp_w": 33,
+                    "disp_h": 6,
+                    "disp_x": 165,
+                    "disp_y": 34,
+                    "show_val": true,
+                    "val_colour": [
+                        0,
+                        255,
+                        0
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 14,
+                    "val_x": 176,
+                    "val_y": 58,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 11,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "Network - Download",
+                    "enabled": true,
+                    "custom_name": "\u21e9",
+                    "name_colour": [
+                        85,
+                        255,
+                        0
+                    ],
+                    "name_size": 18,
+                    "name_x": 10,
+                    "name_y": 136,
+                    "display_type": "Line Graph",
+                    "disp_colour": [
+                        85,
+                        255,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 61.0,
+                    "high_thresh": 60.0,
+                    "disp_w": 45,
+                    "disp_h": 21,
+                    "disp_x": 25,
+                    "disp_y": 135,
+                    "show_val": true,
+                    "val_colour": [
+                        85,
+                        255,
+                        0
+                    ],
+                    "data_format": "Mbps",
+                    "math_mult": 1.0,
+                    "val_size": 15,
+                    "val_x": 77,
+                    "val_y": 137,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 9,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "Network - Upload",
+                    "enabled": true,
+                    "custom_name": "\u21e7",
+                    "name_colour": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "name_size": 18,
+                    "name_x": 10,
+                    "name_y": 109,
+                    "display_type": "Line Graph",
+                    "disp_colour": [
+                        0,
+                        255,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 21.0,
+                    "high_thresh": 20.0,
+                    "disp_w": 45,
+                    "disp_h": 21,
+                    "disp_x": 25,
+                    "disp_y": 109,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "data_format": "Mbps",
+                    "math_mult": 1.0,
+                    "val_size": 15,
+                    "val_x": 77,
+                    "val_y": 112,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "NVIDIA - Core Temp",
+                    "enabled": true,
+                    "custom_name": "",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        0,
+                        255,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 80.0,
+                    "high_thresh": 65.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        0,
+                        255,
+                        0
+                    ],
+                    "data_format": "Temp (\u00b0C)",
+                    "math_mult": 1.0,
+                    "val_size": 15,
+                    "val_x": 256,
+                    "val_y": 65,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "NVIDIA - Core Load",
+                    "enabled": true,
+                    "custom_name": "GPU",
+                    "name_colour": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "name_size": 16,
+                    "name_x": 260,
+                    "name_y": 83,
+                    "display_type": "Bar Gauge",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 33,
+                    "disp_h": 6,
+                    "disp_x": 243,
+                    "disp_y": 34,
+                    "show_val": true,
+                    "val_colour": [
+                        0,
+                        255,
+                        0
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 14,
+                    "val_x": 254,
+                    "val_y": 50,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "NVIDIA - VRAM Load",
+                    "enabled": false,
+                    "custom_name": "NVIDIA - VRAM Load",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "NVIDIA - Core Clock",
+                    "enabled": false,
+                    "custom_name": "NVIDIA - Core Clock",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "MHz",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "NVIDIA - VRAM Clock",
+                    "enabled": false,
+                    "custom_name": "NVIDIA - VRAM Clock",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "MHz",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "NVIDIA - Power Draw",
+                    "enabled": false,
+                    "custom_name": "NVIDIA - Power Draw",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Watts",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "CPU Core 1 Load",
+                    "enabled": false,
+                    "custom_name": "CPU Core 1 Load",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "CPU Core 1 Freq",
+                    "enabled": false,
+                    "custom_name": "CPU Core 1 Freq",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "MHz",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "CPU Core 2 Load",
+                    "enabled": false,
+                    "custom_name": "CPU Core 2 Load",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "CPU Core 2 Freq",
+                    "enabled": false,
+                    "custom_name": "CPU Core 2 Freq",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "MHz",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "CPU Core 3 Load",
+                    "enabled": false,
+                    "custom_name": "CPU Core 3 Load",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "CPU Core 3 Freq",
+                    "enabled": false,
+                    "custom_name": "CPU Core 3 Freq",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "MHz",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "CPU Core 4 Load",
+                    "enabled": false,
+                    "custom_name": "CPU Core 4 Load",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "CPU Core 4 Freq",
+                    "enabled": false,
+                    "custom_name": "CPU Core 4 Freq",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "MHz",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "Storage Usage - /",
+                    "enabled": true,
+                    "custom_name": "sda3 /",
+                    "name_colour": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "name_size": 13,
+                    "name_x": 11,
+                    "name_y": 166,
+                    "display_type": "Horizontal Bar",
+                    "disp_colour": [
+                        0,
+                        170,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 110,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 168,
+                    "show_val": true,
+                    "val_colour": [
+                        85,
+                        255,
+                        0
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 14,
+                    "val_x": 265,
+                    "val_y": 166,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "Storage Usage - /boot",
+                    "enabled": true,
+                    "custom_name": "sda2 /boot",
+                    "name_colour": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "name_size": 13,
+                    "name_x": 11,
+                    "name_y": 179,
+                    "display_type": "Horizontal Bar",
+                    "disp_colour": [
+                        0,
+                        170,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 110,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 180,
+                    "show_val": true,
+                    "val_colour": [
+                        85,
+                        255,
+                        0
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 14,
+                    "val_x": 265,
+                    "val_y": 179,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "Storage Usage - /boot/efi",
+                    "enabled": true,
+                    "custom_name": "sda1 /boot/efi",
+                    "name_colour": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "name_size": 13,
+                    "name_x": 11,
+                    "name_y": 192,
+                    "display_type": "Horizontal Bar",
+                    "disp_colour": [
+                        0,
+                        170,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 110,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 192,
+                    "show_val": true,
+                    "val_colour": [
+                        85,
+                        255,
+                        0
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 14,
+                    "val_x": 265,
+                    "val_y": 192,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "Storage Usage - /mnt/wwn-0x50014ee6ac022a8f-part1",
+                    "enabled": true,
+                    "custom_name": "sdc1 WD640GB",
+                    "name_colour": [
+                        85,
+                        170,
+                        0
+                    ],
+                    "name_size": 13,
+                    "name_x": 11,
+                    "name_y": 220,
+                    "display_type": "Horizontal Bar",
+                    "disp_colour": [
+                        0,
+                        170,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 84.0,
+                    "disp_w": 110,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 220,
+                    "show_val": true,
+                    "val_colour": [
+                        85,
+                        255,
+                        0
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 14,
+                    "val_x": 265,
+                    "val_y": 219,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "Storage Usage - /mnt/206d4081-3e36-4035-a689-6bd1c9504785",
+                    "enabled": true,
+                    "custom_name": "sdb1 KING120GB",
+                    "name_colour": [
+                        85,
+                        170,
+                        0
+                    ],
+                    "name_size": 13,
+                    "name_x": 11,
+                    "name_y": 206,
+                    "display_type": "Horizontal Bar",
+                    "disp_colour": [
+                        0,
+                        170,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 110,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 206,
+                    "show_val": true,
+                    "val_colour": [
+                        85,
+                        255,
+                        0
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 14,
+                    "val_x": 265,
+                    "val_y": 206,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "acpitz - Sensor 1",
+                    "enabled": false,
+                    "custom_name": "acpitz - Sensor 1",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "acpitz - Sensor 2",
+                    "enabled": false,
+                    "custom_name": "acpitz - Sensor 2",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm - Ambient",
+                    "enabled": false,
+                    "custom_name": "dell_smm - Ambient",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm - Sensor 2",
+                    "enabled": false,
+                    "custom_name": "dell_smm - Sensor 2",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm - CPU",
+                    "enabled": false,
+                    "custom_name": "",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        0,
+                        255,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 80.0,
+                    "high_thresh": 70.0,
+                    "disp_w": 12,
+                    "disp_h": 35,
+                    "disp_x": 155,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        0,
+                        255,
+                        0
+                    ],
+                    "data_format": "Temp (\u00b0C)",
+                    "math_mult": 1.0,
+                    "val_size": 14,
+                    "val_x": 7,
+                    "val_y": 116,
+                    "show_max": false,
+                    "max_auto": false,
+                    "max_manual": "80",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm - Sensor 4",
+                    "enabled": false,
+                    "custom_name": "dell_smm - Sensor 4",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm - Sensor 5",
+                    "enabled": false,
+                    "custom_name": "dell_smm - Sensor 5",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm - Sensor 6",
+                    "enabled": false,
+                    "custom_name": "dell_smm - Sensor 6",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm - Sensor 7",
+                    "enabled": false,
+                    "custom_name": "dell_smm - Sensor 7",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm - Sensor 8",
+                    "enabled": false,
+                    "custom_name": "dell_smm - Sensor 8",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm - Sensor 9",
+                    "enabled": false,
+                    "custom_name": "dell_smm - Sensor 9",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm - Sensor 10",
+                    "enabled": false,
+                    "custom_name": "dell_smm - Sensor 10",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "coretemp - Package id 0",
+                    "enabled": false,
+                    "custom_name": "ct_p_id0",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 14,
+                    "name_x": 50,
+                    "name_y": 130,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        0,
+                        255,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 80.0,
+                    "high_thresh": 70.0,
+                    "disp_w": 11,
+                    "disp_h": 35,
+                    "disp_x": 155,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        0,
+                        255,
+                        0
+                    ],
+                    "data_format": "Temp (\u00b0C)",
+                    "math_mult": 1.0,
+                    "val_size": 14,
+                    "val_x": 7,
+                    "val_y": 132,
+                    "show_max": false,
+                    "max_auto": false,
+                    "max_manual": "80",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "coretemp - Core 0",
+                    "enabled": false,
+                    "custom_name": "coretemp - Core 0",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "coretemp - Core 1",
+                    "enabled": false,
+                    "custom_name": "coretemp - Core 1",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "coretemp - Core 2",
+                    "enabled": false,
+                    "custom_name": "coretemp - Core 2",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "coretemp - Core 3",
+                    "enabled": false,
+                    "custom_name": "coretemp - Core 3",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "coretemp-isa-0000 - temp1",
+                    "enabled": false,
+                    "custom_name": "ct_i_t1",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 14,
+                    "name_x": 50,
+                    "name_y": 148,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        0,
+                        255,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 80.0,
+                    "high_thresh": 70.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        0,
+                        255,
+                        0
+                    ],
+                    "data_format": "Temp (\u00b0C)",
+                    "math_mult": 1.0,
+                    "val_size": 14,
+                    "val_x": 7,
+                    "val_y": 148,
+                    "show_max": false,
+                    "max_auto": false,
+                    "max_manual": "80",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "coretemp-isa-0000 - temp2",
+                    "enabled": false,
+                    "custom_name": "coretemp-isa-0000 - temp2",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "coretemp-isa-0000 - temp3",
+                    "enabled": false,
+                    "custom_name": "coretemp-isa-0000 - temp3",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "coretemp-isa-0000 - temp4",
+                    "enabled": false,
+                    "custom_name": "coretemp-isa-0000 - temp4",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "coretemp-isa-0000 - temp5",
+                    "enabled": false,
+                    "custom_name": "coretemp-isa-0000 - temp5",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "acpitz-acpi-0 - temp1",
+                    "enabled": false,
+                    "custom_name": "acpitz-acpi-0 - temp1",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "acpitz-acpi-0 - temp2",
+                    "enabled": false,
+                    "custom_name": "acpitz-acpi-0 - temp2",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm-isa-0000 - fan1",
+                    "enabled": true,
+                    "custom_name": "Fan1",
+                    "name_colour": [
+                        0,
+                        0,
+                        255
+                    ],
+                    "name_size": 18,
+                    "name_x": 167,
+                    "name_y": 109,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        0,
+                        170,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 5000.0,
+                    "high_thresh": 3000.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 190,
+                    "disp_y": 105,
+                    "show_val": true,
+                    "val_colour": [
+                        0,
+                        170,
+                        0
+                    ],
+                    "data_format": "RPM",
+                    "math_mult": 1.0,
+                    "val_size": 18,
+                    "val_x": 214,
+                    "val_y": 109,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm-isa-0000 - fan2",
+                    "enabled": true,
+                    "custom_name": "Fan2",
+                    "name_colour": [
+                        0,
+                        0,
+                        255
+                    ],
+                    "name_size": 18,
+                    "name_x": 167,
+                    "name_y": 133,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        0,
+                        170,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 5000.0,
+                    "high_thresh": 3000.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 190,
+                    "disp_y": 130,
+                    "show_val": true,
+                    "val_colour": [
+                        0,
+                        170,
+                        0
+                    ],
+                    "data_format": "RPM",
+                    "math_mult": 1.0,
+                    "val_size": 18,
+                    "val_x": 214,
+                    "val_y": 133,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm-isa-0000 - temp1",
+                    "enabled": false,
+                    "custom_name": "dell_smm-isa-0000 - temp1",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm-isa-0000 - temp2",
+                    "enabled": true,
+                    "custom_name": "",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 14,
+                    "name_x": 50,
+                    "name_y": 116,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        0,
+                        255,
+                        0
+                    ],
+                    "disp_col_high": [
+                        255,
+                        0,
+                        0
+                    ],
+                    "gauge_max": 80.0,
+                    "high_thresh": 70.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        0,
+                        255,
+                        0
+                    ],
+                    "data_format": "Temp (\u00b0C)",
+                    "math_mult": 1.0,
+                    "val_size": 25,
+                    "val_x": 90,
+                    "val_y": 64,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 54
+                },
+                {
+                    "hw_id": "dell_smm-isa-0000 - temp3",
+                    "enabled": false,
+                    "custom_name": "dell_smm-isa-0000 - temp3",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm-isa-0000 - temp4",
+                    "enabled": false,
+                    "custom_name": "dell_smm-isa-0000 - temp4",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm-isa-0000 - temp5",
+                    "enabled": false,
+                    "custom_name": "dell_smm-isa-0000 - temp5",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm-isa-0000 - temp6",
+                    "enabled": false,
+                    "custom_name": "dell_smm-isa-0000 - temp6",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm-isa-0000 - temp7",
+                    "enabled": false,
+                    "custom_name": "dell_smm-isa-0000 - temp7",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm-isa-0000 - temp8",
+                    "enabled": false,
+                    "custom_name": "dell_smm-isa-0000 - temp8",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm-isa-0000 - temp9",
+                    "enabled": false,
+                    "custom_name": "dell_smm-isa-0000 - temp9",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 40,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                },
+                {
+                    "hw_id": "dell_smm-isa-0000 - temp10",
+                    "enabled": false,
+                    "custom_name": "dell_smm-isa-0000 - temp10",
+                    "name_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "name_size": 12,
+                    "name_x": 10,
+                    "name_y": 30,
+                    "display_type": "Text Only",
+                    "disp_colour": [
+                        50,
+                        200,
+                        50
+                    ],
+                    "disp_col_high": [
+                        255,
+                        50,
+                        50
+                    ],
+                    "gauge_max": 100.0,
+                    "high_thresh": 85.0,
+                    "disp_w": 12,
+                    "disp_h": 12,
+                    "disp_x": 150,
+                    "disp_y": 40,
+                    "show_val": true,
+                    "val_colour": [
+                        255,
+                        255,
+                        255
+                    ],
+                    "data_format": "Auto (%)",
+                    "math_mult": 1.0,
+                    "val_size": 12,
+                    "val_x": 170,
+                    "val_y": 40,
+                    "show_max": false,
+                    "max_auto": true,
+                    "max_manual": "100",
+                    "max_colour": [
+                        200,
+                        200,
+                        200
+                    ],
+                    "max_size": 10,
+                    "max_x": 167,
+                    "max_y": 55
+                }
+            ],
+            "bg_image": "/home/zero/Downloads/g19FullControll/g19FullControll-main/bg_images/g19_lcd_bg1.png",
+            "bg_colour": [
+                0,
+                255,
+                0
+            ],
+            "show_clock": true,
+            "clock_24h": true,
+            "clock_size": 27,
+            "clock_x": 191,
+            "clock_y": 0,
+            "clock_colour": [
+                255,
+                255,
+                255
+            ],
+            "show_date": true,
+            "date_format": "%A, %B %d",
+            "date_size": 19,
+            "date_x": 6,
+            "date_y": 5,
+            "date_colour": [
+                255,
+                255,
+                255
+            ]
+        },
+        "clock": {
+            "show_title_bar": false,
+            "bg_image": "",
+            "bg_colour": [
+                15,
+                15,
+                20
+            ],
+            "face_type": "Analog",
+            "use_24h": true,
+            "show_date": true,
+            "date_format": "%A, %B %d",
+            "clock_colour": [
+                0,
+                255,
+                255
+            ],
+            "date_colour": [
+                85,
+                255,
+                0
+            ],
+            "digital_size": 40,
+            "digital_x": 40,
+            "digital_y": 90,
+            "date_size": 20,
+            "date_x": 60,
+            "date_y": 150,
+            "hour_colour": [
+                255,
+                0,
+                0
+            ],
+            "min_colour": [
+                0,
+                0,
+                255
+            ],
+            "sec_colour": [
+                0,
+                255,
+                0
+            ],
+            "face_colour": [
+                15,
+                15,
+                20
+            ],
+            "outline_colour": [
+                54,
+                54,
+                54
+            ]
+        },
+        "image_viewer": {
+            "folder_path": "/home/zero/Bilder/backgrounds",
+            "mode": "Slideshow",
+            "interval": 1
+        }
+    }
+}
