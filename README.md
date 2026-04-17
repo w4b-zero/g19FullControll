@@ -1,4 +1,5 @@
 Testfiles - Not Stable! use original Repository from https://github.com/markes12344/g19FullControll !!
+![G19FullControl LCD](images/sample_config.png)
 
 # G19FullControl for Linux 🐧⌨️
 
