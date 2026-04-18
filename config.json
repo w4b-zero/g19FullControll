@@ -20,52 +20,52 @@
             "profile_screen_index": 0,
             "g_key_map": {
                 "58": {
-                    "action": "mwledc.sh 192.168.188.92,15 192.168.188.153,18 192.168.188.170,3",
-                    "note": "Rainbow Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "59": {
-                    "action": "mwledc.sh 192.168.188.92,14 192.168.188.153,2 192.168.188.170,1",
-                    "note": "Matrix Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "60": {
-                    "action": "mwledc.sh 192.168.188.153,3 192.168.188.92,16",
-                    "note": "Metaballs Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "61": {
-                    "action": "mwledc.sh 192.168.188.153,4 192.168.188.92,21",
-                    "note": "Ripple Rainbow Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "62": {
-                    "action": "mwledc.sh 192.168.188.92,5 192.168.188.153,5",
-                    "note": "Sindots Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "63": {
-                    "action": "mwledc.sh 192.168.188.92,6 192.168.188.153,6",
-                    "note": "Swirl Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "64": {
-                    "action": "mwledc.sh 192.168.188.153,7 192.168.188.92,22",
-                    "note": "Twinklecat Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "65": {
-                    "action": "mwledc.sh 192.168.188.153,8 192.168.188.92,17",
-                    "note": "Red Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "66": {
-                    "action": "mwledc.sh 192.168.188.153,9 192.168.188.92,18",
-                    "note": "Green Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "67": {
-                    "action": "mwledc.sh 192.168.188.153,10 192.168.188.92,19",
-                    "note": "Blue Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "68": {
-                    "action": "mwledc.sh 192.168.188.153,11 192.168.188.92,20",
-                    "note": "White Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "69": {
-                    "action": "mwledc.sh 192.168.188.153,0 192.168.188.92,0",
-                    "note": "Backlight Off"
+                    "action": "",
+                    "note": ""
                 }
             }
         },
@@ -82,52 +82,52 @@
             "profile_screen_index": 1,
             "g_key_map": {
                 "58": {
-                    "action": "mwledc.sh 192.168.188.92,15,50 192.168.188.153,18,50 192.168.188.170,3,50",
-                    "note": "Rainbow Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "59": {
-                    "action": "mwledc.sh 192.168.188.92,14,50 192.168.188.153,2,50 192.168.188.170,1,50",
-                    "note": "Matrix Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "60": {
-                    "action": "mwledc.sh 192.168.188.153,3,50 192.168.188.92,16,50",
-                    "note": "Metaballs Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "61": {
-                    "action": "mwledc.sh 192.168.188.153,4,50 192.168.188.92,21,50",
-                    "note": "Ripple Rainbow Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "62": {
-                    "action": "mwledc.sh 192.168.188.92,5,50 192.168.188.153,5,50",
-                    "note": "Sindots Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "63": {
-                    "action": "mwledc.sh 192.168.188.92,6,50 192.168.188.153,6,50",
-                    "note": "Swirl Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "64": {
-                    "action": "mwledc.sh 192.168.188.153,7,50 192.168.188.92,22,50",
-                    "note": "Twinklecat Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "65": {
-                    "action": "mwledc.sh 192.168.188.153,8,50 192.168.188.92,17,50",
-                    "note": "Red Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "66": {
-                    "action": "mwledc.sh 192.168.188.153,9,50 192.168.188.92,18,50",
-                    "note": "Green Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "67": {
-                    "action": "mwledc.sh 192.168.188.153,10,50 192.168.188.92,19,50",
-                    "note": "Blue Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "68": {
-                    "action": "mwledc.sh 192.168.188.153,11,50 192.168.188.92,20,50",
-                    "note": "White Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "69": {
-                    "action": "mwledc.sh 192.168.188.153,0,0 192.168.188.92,0,0",
-                    "note": "Backlight Off"
+                    "action": "",
+                    "note": ""
                 }
             }
         },
@@ -144,52 +144,52 @@
             "profile_screen_index": 3,
             "g_key_map": {
                 "58": {
-                    "action": "mwledc.sh 192.168.188.92,15,10 192.168.188.153,18,10 192.168.188.170,3,10",
-                    "note": "Rainbow Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "59": {
-                    "action": "mwledc.sh 192.168.188.92,14,10 192.168.188.153,2,10 192.168.188.170,1,10",
-                    "note": "Matrix Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "60": {
-                    "action": "mwledc.sh 192.168.188.153,3,10 192.168.188.92,16,10",
-                    "note": "Metaballs Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "61": {
-                    "action": "mwledc.sh 192.168.188.153,4,10 192.168.188.92,21,10",
-                    "note": "Ripple Rainbow Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "62": {
-                    "action": "mwledc.sh 192.168.188.92,5,10 192.168.188.153,5,10",
-                    "note": "Sindots Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "63": {
-                    "action": "mwledc.sh 192.168.188.92,6,10 192.168.188.153,6,10",
-                    "note": "Swirl Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "64": {
-                    "action": "mwledc.sh 192.168.188.153,7,10 192.168.188.92,22,10",
-                    "note": "Twinklecat Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "65": {
-                    "action": "mwledc.sh 192.168.188.153,8,10 192.168.188.92,17,10",
-                    "note": "Red Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "66": {
-                    "action": "mwledc.sh 192.168.188.153,9,10 192.168.188.92,18,10",
-                    "note": "Green Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "67": {
-                    "action": "mwledc.sh 192.168.188.153,10,10 192.168.188.92,19,10",
-                    "note": "Blue Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "68": {
-                    "action": "mwledc.sh 192.168.188.153,11,10 192.168.188.92,20,10",
-                    "note": "White Backlight"
+                    "action": "",
+                    "note": ""
                 },
                 "69": {
-                    "action": "mwledc.sh 192.168.188.153,0,0 192.168.188.92,0,0",
-                    "note": "Backlight Off"
+                    "action": "",
+                    "note": ""
                 }
             }
         }
@@ -3320,7 +3320,7 @@
                     "max_y": 55
                 }
             ],
-            "bg_image": "/home/zero/Downloads/g19FullControll/g19FullControll-main/bg_images/g19_lcd_bg1.png",
+            "bg_image": "/home/zero/.config/G19FullControl/bg_images/g19_lcd_bg1.png",
             "bg_colour": [
                 0,
                 255,

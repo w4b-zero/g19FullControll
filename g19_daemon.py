@@ -1,8 +1,8 @@
 # "g19_daemon.py" V6.1
 
 # G19FullControl Hardware Daemon
-# This script runs in the background. It communicates directly with the Logitech G19 hardware 
-# via USB (PyUSB), polls system sensors (psutil, lm-sensors, sysfs), and handles Wayland-compatible 
+# This script runs in the background. It communicates directly with the Logitech G19 hardware
+# via USB (PyUSB), polls system sensors (psutil, lm-sensors, sysfs), and handles Wayland-compatible
 # macro injections (evdev).
 
 import os
@@ -98,7 +98,7 @@ mr_flash_task = None
 # ==========================================
 # [2] EVDEV & KEYBOARD SNIFFER SETUP
 # ==========================================
-# Create a virtual keyboard. This allows us to inject keypresses directly into the Linux 
+# Create a virtual keyboard. This allows us to inject keypresses directly into the Linux
 # input subsystem, bypassing display server restrictions (Works natively on Wayland & X11).
 VIRTUAL_KB = None
 try:
@@ -118,18 +118,18 @@ for path in evdev.list_devices():
             physical_kb = dev
             break
 
-if physical_kb: 
+if physical_kb:
     print(f"Hardware MR Sniffer attached to: {physical_kb.name}")
 else:
     print("WARNING: Could not find physical QWERTY G19 keyboard for MR Sniffer!")
 
 # Mapping dictionary for JSON macro text strings to Linux ecodes
 KEY_MAP = {
-    'a': ecodes.KEY_A, 'b': ecodes.KEY_B, 'c': ecodes.KEY_C, 'd': ecodes.KEY_D, 'e': ecodes.KEY_E, 'f': ecodes.KEY_F, 'g': ecodes.KEY_G, 
-    'h': ecodes.KEY_H, 'i': ecodes.KEY_I, 'j': ecodes.KEY_J, 'k': ecodes.KEY_K, 'l': ecodes.KEY_L, 'm': ecodes.KEY_M, 'n': ecodes.KEY_N, 
-    'o': ecodes.KEY_O, 'p': ecodes.KEY_P, 'q': ecodes.KEY_Q, 'r': ecodes.KEY_R, 's': ecodes.KEY_S, 't': ecodes.KEY_T, 'u': ecodes.KEY_U, 
-    'v': ecodes.KEY_V, 'w': ecodes.KEY_W, 'x': ecodes.KEY_X, 'y': ecodes.KEY_Y, 'z': ecodes.KEY_Z, '1': ecodes.KEY_1, '2': ecodes.KEY_2, 
-    '3': ecodes.KEY_3, '4': ecodes.KEY_4, '5': ecodes.KEY_5, '6': ecodes.KEY_6, '7': ecodes.KEY_7, '8': ecodes.KEY_8, '9': ecodes.KEY_9, 
+    'a': ecodes.KEY_A, 'b': ecodes.KEY_B, 'c': ecodes.KEY_C, 'd': ecodes.KEY_D, 'e': ecodes.KEY_E, 'f': ecodes.KEY_F, 'g': ecodes.KEY_G,
+    'h': ecodes.KEY_H, 'i': ecodes.KEY_I, 'j': ecodes.KEY_J, 'k': ecodes.KEY_K, 'l': ecodes.KEY_L, 'm': ecodes.KEY_M, 'n': ecodes.KEY_N,
+    'o': ecodes.KEY_O, 'p': ecodes.KEY_P, 'q': ecodes.KEY_Q, 'r': ecodes.KEY_R, 's': ecodes.KEY_S, 't': ecodes.KEY_T, 'u': ecodes.KEY_U,
+    'v': ecodes.KEY_V, 'w': ecodes.KEY_W, 'x': ecodes.KEY_X, 'y': ecodes.KEY_Y, 'z': ecodes.KEY_Z, '1': ecodes.KEY_1, '2': ecodes.KEY_2,
+    '3': ecodes.KEY_3, '4': ecodes.KEY_4, '5': ecodes.KEY_5, '6': ecodes.KEY_6, '7': ecodes.KEY_7, '8': ecodes.KEY_8, '9': ecodes.KEY_9,
     '0': ecodes.KEY_0, 'space': ecodes.KEY_SPACE, 'ctrl': ecodes.KEY_LEFTCTRL, 'shift': ecodes.KEY_LEFTSHIFT, 'alt': ecodes.KEY_LEFTALT,
     'tab': ecodes.KEY_TAB, 'enter': ecodes.KEY_ENTER, 'esc': ecodes.KEY_ESC, 'backspace': ecodes.KEY_BACKSPACE
 }
@@ -197,7 +197,7 @@ async def execute_macro(macro_array):
     for event in macro_array:
         delay = event.get("delay", 0)
         if delay > 0: await asyncio.sleep(delay)
-        
+
         ecode = KEY_MAP.get(event.get("key", ""))
         if ecode:
             # 1 = Key Down, 0 = Key Up
@@ -212,27 +212,27 @@ async def hardware_key_sniffer():
         async for event in physical_kb.async_read_loop():
             # Only track key-down (1) and key-up (0), ignore auto-repeat OS holds (2)
             if event.type == ecodes.EV_KEY and mr_state == 2:
-                if event.value == 2: continue 
-                
+                if event.value == 2: continue
+
                 key_code_str = evdev.ecodes.KEY.get(event.code, "")
                 if isinstance(key_code_str, list): key_code_str = key_code_str[0]
                 if not isinstance(key_code_str, str) or not key_code_str.startswith("KEY_"): continue
-                
+
                 now = time.time()
                 action = "down" if event.value == 1 else "up"
                 key_name = key_code_str.replace("KEY_", "").lower()
-                
+
                 print(f"Hardware MR Sniffer Recorded: {key_name} {action}")
                 mr_events.append({"action": action, "key": key_name, "delay": round(now - mr_last_time, 3)})
                 mr_last_time = now
-    except Exception as ex: 
+    except Exception as ex:
         print(f"Hardware Sniffer Error: {ex}")
 
 async def flash_mr_led(pyusb_dev, config):
     """Flashes the MR / M-Key LEDs to guide the user through the Macro Recording states."""
     global mr_state, current_profile_index
     toggle = False
-    
+
     while mr_state > 0:
         try:
             base_mask = config['profiles'][current_profile_index]['m_led_mask']
@@ -240,39 +240,51 @@ async def flash_mr_led(pyusb_dev, config):
             if mr_state == 1: mask = base_mask if toggle else 0
             # State 2: Flashing the MR Key (Hardware Mask = 16)
             elif mr_state == 2: mask = 16 if toggle else 0
-                
+
             set_mkey_led(pyusb_dev, mask)
         except Exception: pass
-            
+
         toggle = not toggle
         await asyncio.sleep(0.3)
-        
+
     # State 0: Recording finished/cancelled. Restore normal solid M-key LED.
     try: set_mkey_led(pyusb_dev, config['profiles'][current_profile_index]['m_led_mask'])
     except Exception: pass
 
 async def config_watcher_loop(pyusb_dev, config):
     """Watches config.json for GUI saves and hot-reloads the daemon in real-time."""
-    global current_profile_index
+    global current_profile_index, current_screen_index, is_in_menu
     print("Config Watcher Online.")
     last_mtime = os.path.getmtime(CONFIG_PATH)
 
     while True:
-        await asyncio.sleep(1) 
+        await asyncio.sleep(1)
         try:
             current_mtime = os.path.getmtime(CONFIG_PATH)
             if current_mtime != last_mtime:
                 last_mtime = current_mtime
                 print("\n--- Config Change Detected! Hot-Reloading... ---")
-                
+
                 new_config = load_config()
                 if new_config:
                     config.clear()
                     config.update(new_config)
                     # Push updated lighting directly to hardware instantly
+                    current_profile_index = config['start_vars']['start_profile']
+
                     active_prof = config['profiles'][current_profile_index]
                     set_mkey_led(pyusb_dev, active_prof['m_led_mask'])
                     set_backlight_color(pyusb_dev, active_prof['backlight_color'], active_prof.get('backlight_brightness', 100))
+                    profile_screen_index = config['profiles'][current_profile_index]['profile_screen_index']
+                    print(f"profile_screen_index = {profile_screen_index}")
+                    if profile_screen_index != -1:
+                        current_screen_index = profile_screen_index
+                        print(f"current_screen_index = {current_screen_index}")
+                        active_screen = AVAILABLE_SCREENS[current_screen_index]
+                        print(f"active_screen.name = {active_screen.name}")
+                        is_in_menu = False
+                        print(f"is_in_menu = {is_in_menu}")
+
         except Exception as e:
             print(f"Watcher Error: {e}")
 
@@ -283,10 +295,10 @@ async def hardware_polling_loop():
     """
     global SYSTEM_CACHE
     print("Hardware Polling Engine Online.")
-    
+
     last_net = psutil.net_io_counters()
     last_time = time.time()
-    
+
     while True:
         # 1. NVIDIA GPU Polling (Via proprietary CLI tool)
         try:
@@ -302,7 +314,7 @@ async def hardware_polling_loop():
         except Exception: pass
 
         # 2. Universal Motherboard/CPU/GPU Sensors (Via lm-sensors)
-        # Note: This naturally picks up AMD Ryzen (k10temp), Intel Core (coretemp), 
+        # Note: This naturally picks up AMD Ryzen (k10temp), Intel Core (coretemp),
         # and AMD Radeon GPUs (amdgpu) for temperatures, fans, and power automatically!
         try:
             sensors_out = subprocess.check_output(["sensors", "-j"], text=True, stderr=subprocess.DEVNULL)
@@ -328,7 +340,7 @@ async def hardware_polling_loop():
                                 # Saves as "GPU card0 - Core Load" for example
                                 SYSTEM_CACHE[f"GPU {card} - Core Load"] = float(f.read().strip())
         except Exception: pass
-        
+
         # 4. Global Network Delta Calculation
         try:
             now = time.time()
@@ -339,7 +351,7 @@ async def hardware_polling_loop():
             last_net = net
             last_time = now
         except Exception: pass
-            
+
         await asyncio.sleep(2.0) # Rest to prevent CPU spiking
 
 async def display_loop(lcd_endpoint, config):
@@ -348,7 +360,7 @@ async def display_loop(lcd_endpoint, config):
     print("Display Engine Online.")
 
     main_menu = MainMenuScreen(AVAILABLE_SCREENS)
-    
+
     while True:
         if lcd_endpoint:
             try:
@@ -362,7 +374,7 @@ async def display_loop(lcd_endpoint, config):
                 # 2. Convert to hardware bytes and prepend the Magic Header
                 image_bytes = image_to_g19_bytes(dashboard_img)
                 final_payload = HDATA + image_bytes
-                
+
                 # 3. Blast the frame to the LCD bulk endpoint
                 lcd_endpoint.write(final_payload, timeout=100)
             except usb.core.USBError as e:
@@ -375,35 +387,35 @@ async def display_loop(lcd_endpoint, config):
 async def input_loop(pyusb_dev, mkey_ep, lkey_ep, config):
     """Listens to physical interrupt endpoints for G-Keys, M-Keys, and L-Keys."""
     global current_profile_index, current_screen_index, is_in_menu, menu_selection_index
-    global mr_state, mr_target, mr_events, mr_last_time 
+    global mr_state, mr_target, mr_events, mr_last_time
     print("Input Engine Online. Listening for G/M/L keys...")
 
     while True:
         # --- [A] READ M & G KEYS (Endpoint 0x83) ---
         try:
-            report = mkey_ep.read(8, timeout=10) 
+            report = mkey_ep.read(8, timeout=10)
             if report:
                 report_id = report[0]
 
                 # Report ID 2 represents the Profile cluster (M1, M2, M3, MR)
                 if report_id == 2:
                     mkey_byte = report[2]
-                    
+
                     # --- MR KEY LOGIC ---
                     if mkey_byte == 128:
                         if VIRTUAL_KB: # Pulse Esc to cancel any ongoing OS tasks safely
                             VIRTUAL_KB.write(ecodes.EV_KEY, ecodes.KEY_ESC, 1); VIRTUAL_KB.syn()
                             VIRTUAL_KB.write(ecodes.EV_KEY, ecodes.KEY_ESC, 0); VIRTUAL_KB.syn()
-                            
+
                         if mr_state == 0:
                             mr_state = 1
                             print("MR State 1: Flashing... Press a target G-Key.")
                             global mr_flash_task
                             if mr_flash_task and not mr_flash_task.done(): mr_flash_task.cancel()
                             mr_flash_task = asyncio.create_task(flash_mr_led(pyusb_dev, config))
-                            
+
                         elif mr_state == 1:
-                            mr_state = 0 
+                            mr_state = 0
                             print("MR State: Cancelled.")
                         elif mr_state == 2:
                             mr_state = 0
@@ -415,26 +427,37 @@ async def input_loop(pyusb_dev, mkey_ep, lkey_ep, config):
                                 gmap[mr_target] = {"action": mr_events, "note": existing_note}
                                 with open(CONFIG_PATH, 'w') as f: json.dump(config, f, indent=4)
                         continue
-                    
+
                     # --- PROFILE SWITCHING (M1/M2/M3) ---
                     new_profile = -1
-                    if mkey_byte == 16: new_profile = 0   
-                    elif mkey_byte == 32: new_profile = 1 
-                    elif mkey_byte == 64: new_profile = 2 
+                    if mkey_byte == 16: new_profile = 0
+                    elif mkey_byte == 32: new_profile = 1
+                    elif mkey_byte == 64: new_profile = 2
 
                     if new_profile != -1 and new_profile != current_profile_index and new_profile < len(config['profiles']):
                         if mr_state > 0: continue # Block switching while recording a macro
                         current_profile_index = new_profile
+
                         print(f"--- Profile switched to {config['profiles'][current_profile_index].get('name', 'M')} ---")
-                        set_mkey_led(pyusb_dev, config['profiles'][current_profile_index]['m_led_mask']) 
+                        set_mkey_led(pyusb_dev, config['profiles'][current_profile_index]['m_led_mask'])
+                        set_mkey_led(pyusb_dev, config['profiles'][current_profile_index]['m_led_mask'])
                         set_backlight_color(pyusb_dev, config['profiles'][current_profile_index]['backlight_color'], config['profiles'][current_profile_index].get('backlight_brightness', 100))
+                        profile_screen_index = config['profiles'][current_profile_index]['profile_screen_index']
+                        print(f"profile_screen_index = {profile_screen_index}")
+                        if profile_screen_index != -1:
+                            current_screen_index = profile_screen_index
+                            print(f"current_screen_index = {current_screen_index}")
+                            active_screen = AVAILABLE_SCREENS[current_screen_index]
+                            print(f"active_screen.name = {active_screen.name}")
+                            is_in_menu = False
+                            print(f"is_in_menu = {is_in_menu}")
 
                 # Report ID 3 represents the Macro Bank (G1 - G12)
                 elif report_id == 3:
                     gkey_code = report[1]
                     if gkey_code != 0:
                         gkey_str = str(gkey_code)
-                        
+
                         # Set Target for Macro Recorder
                         if mr_state == 1:
                             mr_target = gkey_str
@@ -443,7 +466,7 @@ async def input_loop(pyusb_dev, mkey_ep, lkey_ep, config):
                             mr_last_time = time.time()
                             print(f"MR State 2: Recording Keystrokes for G{gkey_str}...")
                             continue
-                        
+
                         # Normal Playback
                         if mr_state == 0:
                             active_map = config['profiles'][current_profile_index].get('g_key_map', {})
@@ -465,7 +488,7 @@ async def input_loop(pyusb_dev, mkey_ep, lkey_ep, config):
 
         # --- [B] READ L-KEYS (Endpoint 0x81) ---
         try:
-            l_report = lkey_ep.read(2, timeout=10) 
+            l_report = lkey_ep.read(2, timeout=10)
             if l_report:
                 lkey_byte = l_report[0]
 
@@ -479,10 +502,10 @@ async def input_loop(pyusb_dev, mkey_ep, lkey_ep, config):
                                     with open(CONFIG_PATH, 'w') as f: json.dump(config, f, indent=4)
                                     print("Saved new backlight settings to config.json.")
                                 except Exception as e: print(f"Error saving config: {e}")
-                                
+
                         is_in_menu = not is_in_menu
                         print(f"L-Key: Menu | Menu Active: {is_in_menu}")
-                    
+
                     # --- OS MENU SCROLLING ---
                     elif is_in_menu:
                         if lkey_byte == G19_L_UP: menu_selection_index = (menu_selection_index - 1) % len(AVAILABLE_SCREENS)
@@ -499,11 +522,11 @@ async def input_loop(pyusb_dev, mkey_ep, lkey_ep, config):
                                 current_bri = config['profiles'][current_profile_index].get('backlight_brightness', 100)
                                 active_screen.r, active_screen.g, active_screen.b = current_col
                                 active_screen.brightness = current_bri
-                    
+
                     # --- APP SPECIFIC L-PAD INPUT ---
                     else:
                         active_screen = AVAILABLE_SCREENS[current_screen_index]
-                        
+
                         # Hardware Clock Face Toggle
                         if active_screen.name == "Clock" and lkey_byte in [G19_L_LEFT, G19_L_RIGHT]:
                             c_cfg = config.setdefault('screens', {}).setdefault('clock', {})
@@ -512,11 +535,11 @@ async def input_loop(pyusb_dev, mkey_ep, lkey_ep, config):
                             try:
                                 with open(CONFIG_PATH, 'w') as f: json.dump(config, f, indent=4)
                             except Exception: pass
-                            
+
                         # Standard App Inputs (Passes through to current Screen Class)
                         if hasattr(active_screen, 'handle_input'):
                             active_screen.handle_input(lkey_byte)
-                            
+
                             # Physical Hardware Hook for Backlight App (Instant USB pushing)
                             if active_screen.name == "Backlight Adjuster" and lkey_byte in [G19_L_LEFT, G19_L_RIGHT]:
                                 new_col = [active_screen.r, active_screen.g, active_screen.b]
@@ -536,14 +559,16 @@ async def input_loop(pyusb_dev, mkey_ep, lkey_ep, config):
 # [5] DAEMON BOOT SEQUENCE
 # ==========================================
 async def main():
-    global current_profile_index
-    
+    global current_profile_index, current_screen_index, is_in_menu
+
     config = load_config()
-    if not config: return 
+    if not config: return
 
     G19_VENDOR_ID = int(config['hardware']['vendor_id'], 16)
     G19_PRODUCT_ID = int(config['hardware']['product_id'], 16)
-    
+
+    current_profile_index = config['start_vars']['start_profile']
+
     pyusb_dev = None
     print("--- G19FullControl Daemon V6.1 Starting ---")
 
@@ -569,7 +594,7 @@ async def main():
         usb.util.claim_interface(pyusb_dev, 0)
         intf0 = cfg[(0,0)]
         lcd_endpoint = usb.util.find_descriptor(intf0, bEndpointAddress=0x02)
-        lkey_ep = usb.util.find_descriptor(intf0, bEndpointAddress=0x81) 
+        lkey_ep = usb.util.find_descriptor(intf0, bEndpointAddress=0x81)
 
         # Interface 1: Claim M-Keys and G-Keys (0x83)
         usb.util.claim_interface(pyusb_dev, 1)
@@ -578,7 +603,7 @@ async def main():
         if None in (lcd_endpoint, mkey_ep, lkey_ep):
             print("FATAL: Could not find all necessary USB endpoints.")
             return
-        
+
         print("SUCCESS: All Interfaces Claimed.")
 
         # Initialize lights dynamically from config for the starting profile
@@ -587,9 +612,19 @@ async def main():
         initial_bri = config['profiles'][current_profile_index].get('backlight_brightness', 100)
         set_mkey_led(pyusb_dev, initial_mask)
         set_backlight_color(pyusb_dev, initial_color, initial_bri)
+        profile_screen_index = config['profiles'][current_profile_index]['profile_screen_index']
+        print(f"profile_screen_index = {profile_screen_index}")
+        if profile_screen_index != -1:
+            current_screen_index = profile_screen_index
+            print(f"current_screen_index = {current_screen_index}")
+            active_screen = AVAILABLE_SCREENS[current_screen_index]
+            print(f"active_screen.name = {active_screen.name}")
+            is_in_menu = False
+            print(f"is_in_menu = {is_in_menu}")
+
 
         print("--- All Systems Go! ---")
-        
+
         # Fire up all asynchronous tasks concurrently
         await asyncio.gather(
             display_loop(lcd_endpoint, config),

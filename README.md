@@ -1,6 +1,15 @@
 Testfiles - Not Stable! use original Repository from https://github.com/markes12344/g19FullControll !!
 ![G19FullControl LCD](images/sample_config.png)
 
+Changes: 
+    add required dependencies for Fedora (install.sh / readme.md)
+    add default start Profile (config.json / g19_daemon.py)
+    add default Screen to the Profiles (config.json / g19_daemon.py)
+    
+todo:
+    add Main Settings Tab for select default start Profile (g19_configurator.py) 
+    add default screen select option on the Profiles tabs (g19_configurator.py)
+    
 # G19FullControl for Linux 🐧⌨️
 
 **G19FullControl** is a complete, open-source Linux replacement for the legacy Logitech Gaming Software. Built from the ground up in Python, it breathes new life into the iconic Logitech G19 keyboard on modern Linux distributions (X11 & Wayland).
@@ -28,8 +37,15 @@ To run this software, you will need Python 3 and a few system packages.
 
 **System Packages (Debian/Ubuntu):**
 ```bash
+sudo apt update
 sudo apt install python3-pip python3-pyqt6 lm-sensors playerctl
 ```
+**System Packages (Arch/Fedora):**
+```bash
+sudo dnf update
+sudo dnf install -y python3-pip python3-pyqt6 lm_sensors playerctl
+```
+
 
 **Python PIP Libraries:**
 ```bash
@@ -51,7 +67,7 @@ Because this software communicates directly with USB hardware and injects keystr
 **1. USB Permissions (PyUSB)**
 Create a udev rule to allow access to the Logitech G19:
 ```bash
-echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="046d", ATTR{idProduct}=="c229", MODE="0666"' | sudo tee /etc/udev/rules.d/99-g19.rules
+echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c229", MODE="0666", GROUP="input"' | sudo tee /etc/udev/rules.d/99-g19.rules
 ```
 
 **2. Virtual Keyboard Permissions (evdev/uinput)**
@@ -59,7 +75,10 @@ Create a rule to allow the Macro engine to inject keystrokes:
 ```bash
 echo 'KERNEL=="uinput", MODE="0660", GROUP="input"' | sudo tee /etc/udev/rules.d/99-uinput.rules
 ```
-*Note: Make sure your Linux user is added to the `input` group! (`sudo usermod -aG input $USER`)*
+*Note: Make sure your Linux user is added to the `input` group!)*
+```bash
+sudo usermod -aG input $USER
+```
 
 Reload your udev rules and unplug/replug your keyboard:
 ```bash
