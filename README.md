@@ -2,11 +2,13 @@ Testfiles - Not Stable! use original Repository from https://github.com/markes12
 ![G19FullControl LCD](images/sample_config.png)
 
 Changes: 
+
     add required dependencies for Fedora (install.sh / readme.md)
     add default start Profile (config.json / g19_daemon.py)
     add default Screen to the Profiles (config.json / g19_daemon.py)
     
 todo:
+
     add Main Settings Tab for select default start Profile (g19_configurator.py) 
     add default screen select option on the Profiles tabs (g19_configurator.py)
     
