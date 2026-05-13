@@ -6,6 +6,9 @@ Changes:
     add required dependencies for Fedora (install.sh / readme.md)
     add default start Profile (config.json / g19_daemon.py)
     add default Screen to the Profiles (config.json / g19_daemon.py)
+    Locale support added to translate month and weekday names into the locally used language (g19_screens.py)
+    Add more date format options (g19_configurator.py)
+    Sleep times adjusted to reduce CPU load (g19_daemon.py)    
     
 todo:
 
