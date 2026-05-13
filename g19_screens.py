@@ -5,7 +5,10 @@ import time
 import os
 import math
 import subprocess
+import locale # use for locale translated names of day and month
 from PIL import Image, ImageDraw, ImageFont
+
+locale.setlocale(locale.LC_ALL, '')   # use user's preferred locale
 
 # ==========================================
 # GLOBAL RESOURCE CACHE
@@ -584,3 +587,8 @@ AVAILABLE_SCREENS = [
     ImageViewerScreen(), 
     MediaPlayerScreen() 
 ]
+# id0   Hardware Monitor
+# id1   Clock
+# id2   Backlight Adjuster
+# id3   Image Viewer
+# id4   Media Player
