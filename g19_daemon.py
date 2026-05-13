@@ -5,6 +5,13 @@
 # via USB (PyUSB), polls system sensors (psutil, lm-sensors, sysfs), and handles Wayland-compatible 
 # macro injections (evdev).
 
+## Sleep times adjusted to reduce CPU load.
+## 363 = hardware_polling_loop from 2.0 to 0.5
+## 397 = display_loop add if screen active
+## 399 = display_loop insert if screenname Hardware Monitor 0.5
+## 403 =.display_loop insert else all another screennames 0.1
+## 407 = display_loop add else is in menu 0.05
+
 import os
 import usb.core
 import usb.util
